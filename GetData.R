@@ -10,8 +10,6 @@
 
 require(data.table) #-- Enable use of fread function
 
-#,colClasses = c("character","character","character","character","character","character","character","character","character")
-
 #========================================================================================
 # LOAD MAIN DATASET
 #========================================================================================
@@ -21,7 +19,6 @@ mydata <- fread("C:/Users/Ben/STUDY/Exploratory.Data.Analysis/Assignment.01/hous
 # SUBSET DATA 
 #========================================================================================
 power.con <- subset(mydata,Date == "1/2/2007"|Date == "2/2/2007")
-#summary(power.con)
 
 #========================================================================================
 # FREE MEMORY BY DROPPING MAIN DATASET
